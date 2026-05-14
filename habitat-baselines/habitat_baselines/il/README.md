@@ -148,3 +148,64 @@ Results from evaluation are stored in `data/eqa/nav/results/val`.
 ### Example results:
 
 ![](https://user-images.githubusercontent.com/24846546/78616220-2d942380-7863-11ea-9092-34a760352555.gif) ![](https://user-images.githubusercontent.com/24846546/78616221-2ec55080-7863-11ea-987b-2fdc2a802f24.gif) ![](https://user-images.githubusercontent.com/24846546/78616897-2cfc8c80-7865-11ea-8a4c-0afdfefea49c.gif)
+
+---
+
+## Vision-Language Navigation (R2R)
+
+This project baseline implements Task 2 from the VLN assignment: a
+pretrained visual encoder, pretrained text encoder, gated multimodal fusion,
+recurrent policy head, and complete training/validation loop for Habitat's
+`VLN-v0` task.
+
+The trainer uses the existing R2R VLN dataset loader and Habitat's
+`ShortestPathFollower` to convert each episode reference path into imitation
+learning targets for the discrete actions:
+
+```
+stop, move_forward, turn_left, turn_right
+```
+
+### Configuration
+
+Configuration can be found in:
+
+```
+habitat_baselines/config/vln/il_vln.yaml
+```
+
+Important options:
+
+- `visual_backbone`: torchvision ResNet backbone, default `resnet18`.
+- `visual_pretrained`: load ImageNet weights for the visual encoder.
+- `text_model_name`: HuggingFace text model, default `distilbert-base-uncased`.
+- `freeze_visual_encoder` / `freeze_text_encoder`: freeze pretrained encoders
+  and train only projection, fusion, recurrent policy, and policy head.
+- `max_train_episodes`, `max_val_episodes`: set to `-1` for full splits.
+- `rollout_eval`: run the learned policy in Habitat and report task metrics
+  such as success and SPL.
+
+### Train
+
+```
+python -u -m habitat_baselines.run \
+  --config-name=vln/il_vln.yaml
+```
+
+Checkpoints are stored by default in:
+
+```
+data/vln/il/checkpoints
+```
+
+### Eval
+
+```
+python -u -m habitat_baselines.run \
+  --config-name=vln/il_vln.yaml \
+  habitat_baselines.evaluate=True \
+  habitat_baselines.eval_ckpt_path_dir=data/vln/il/checkpoints/epoch_10.ckpt
+```
+
+Teacher-forced validation logs action loss/accuracy. If `rollout_eval=True`,
+the same checkpoint is also rolled out in Habitat to log navigation metrics.
