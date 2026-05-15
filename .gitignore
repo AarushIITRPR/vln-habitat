@@ -81,6 +81,21 @@ target/
 
 # exclude data from source control by default
 data
+/data
+/utility_dependencies/data/
+/VLN-CE/data/
+
+# large experiment/runtime artifacts
+*.ckpt
+*.pth
+*.pt
+*.mp4
+*.avi
+*.mov
+*.glb
+*.navmesh
+events.out.tfevents*
+wandb/
 
 # Mac OS-specific storage files
 .DS_Store

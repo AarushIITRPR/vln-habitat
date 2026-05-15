@@ -1,0 +1,11 @@
+task,experiment,episodes,sr,spl,distance_to_goal_m,notes
+Task 4,Val seen original,16,0.1875,0.1875,8.638881124556065,Generalization reference split
+Task 4,Val unseen original,16,0.0,0.0,9.461457997560501,Unseen environment evaluation
+Task 4,Val seen paraphrased,16,0.0625,0.0625,8.300974309444427,Rule-based instruction paraphrases
+Task 4,Val unseen paraphrased,16,0.0,0.0,9.088770359754562,Paraphrases on unseen environments
+Task 4,Reduced data 32 episodes,8,0.0,0.0,12.915,Lower-data training run
+Task 4,Reduced data 64 episodes,8,0.25,0.25,7.198,Higher-data clean training run
+Task 4,Gated fusion ablation,8,0.0,0.0,12.106,Simpler multimodal fusion
+Task 4,CMA fusion ablation,8,0.0,0.0,5.919,Cross-modal attention fusion
+Task 5,Baseline CMA 64 episodes,8,0.125,0.086,9.478,Base clean CMA
+Task 5,Stop-aware CMA 64 episodes,8,0.25,0.25,7.198,Action reweighting plus repeated stop targets

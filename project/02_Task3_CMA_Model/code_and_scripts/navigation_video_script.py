@@ -1,0 +1,1 @@
+../../../VLN-CE/scripts/current_habitat_navigation_video.py

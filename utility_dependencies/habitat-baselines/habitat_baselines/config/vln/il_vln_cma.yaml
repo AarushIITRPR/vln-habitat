@@ -1,0 +1,52 @@
+# @package _global_
+
+defaults:
+  - il_vln
+  - _self_
+
+habitat:
+  dataset:
+    data_path: "/home/aarush-gupta/habitat-lab/data/datasets/vln/mp3d/r2r/v1/{split}/{split}.json.gz"
+    scenes_dir: "/home/aarush-gupta/habitat-lab/data/scene_datasets/"
+  task:
+    measurements:
+      success:
+        success_distance: 3.0
+  simulator:
+    concur_render: False
+    habitat_sim_v0:
+      gpu_device_id: -1
+
+habitat_baselines:
+  checkpoint_folder: "data/vln/cma_instances2_balanced/checkpoints"
+  eval_ckpt_path_dir: "data/vln/cma_instances2_balanced/checkpoints"
+  tensorboard_dir: "data/vln/cma_instances2_balanced/tb"
+  il:
+    results_dir: "data/vln/cma_instances2_balanced/results/{split}"
+    output_log_dir: "data/vln/cma_instances2_balanced/logs"
+    vln:
+      fusion_type: "cma"
+      cma_num_heads: 4
+
+      train_split: train
+      val_split: val_seen
+      max_epochs: 12
+      max_train_episodes: 2
+      max_val_episodes: 2
+      max_rollout_episodes: 2
+      max_trajectory_steps: 160
+      max_rollout_steps: 160
+
+      cache_dir: "data/vln/cma_instances2_balanced/cache"
+      refresh_cache: False
+
+      batch_size: 2
+      lr: 1e-4
+      weight_decay: 0.01
+      dropout: 0.1
+      action_loss_weights: [16.0, 0.4, 1.1, 1.8]
+      rollout_eval: True
+      use_depth: True
+      separate_stop_head: True
+      stop_threshold: 0.55
+      stop_head_loss_weight: 1.0

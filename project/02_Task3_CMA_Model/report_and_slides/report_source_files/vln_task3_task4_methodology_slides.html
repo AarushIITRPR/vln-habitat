@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VLN Methodology Slides</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5d6980;
+      --line: #d9deeb;
+      --blue: #2f6fef;
+      --green: #00a676;
+      --red: #d33f49;
+      --orange: #ff9f1c;
+      --purple: #7b5cff;
+      --bg: #ffffff;
+      --soft: #f7f9fd;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eef2f7;
+      color: var(--ink);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+    }
+
+    .deck {
+      display: grid;
+      gap: 32px;
+      padding: 32px;
+      justify-items: center;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background: var(--bg);
+      border: 1px solid #d7dce8;
+      box-shadow: 0 18px 60px rgba(25, 35, 55, 0.14);
+      position: relative;
+      overflow: hidden;
+      padding: 44px 54px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .tag {
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 8px 0 0;
+      font-size: 40px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.35;
+      max-width: 870px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: var(--soft);
+      border-radius: 999px;
+      padding: 9px 14px;
+      color: #36435a;
+      font-size: 15px;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .architecture {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 18px;
+    }
+
+    .lane {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fcfdff;
+      padding: 18px;
+      min-height: 204px;
+    }
+
+    .lane-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .blocks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .block {
+      min-height: 112px;
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: #fff;
+      position: relative;
+    }
+
+    .block h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .block p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.32;
+    }
+
+    .mini-label {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .fusion-row {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr 1fr 1fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .arrow {
+      position: absolute;
+      color: #8b95aa;
+      font-weight: 800;
+      font-size: 22px;
+      right: -16px;
+      top: 44%;
+      z-index: 3;
+    }
+
+    .formula {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .formula-card {
+      border-radius: 14px;
+      background: #f8fbff;
+      border: 1px solid #dbe6ff;
+      padding: 13px 14px;
+      font-size: 15px;
+      line-height: 1.32;
+      color: #33405a;
+    }
+
+    .formula-card strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .task4-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .study {
+      min-height: 190px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .study .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .study h3 {
+      margin: 0 0 9px;
+      font-size: 19px;
+    }
+
+    .study p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.36;
+    }
+
+    .insights {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fcfdff;
+      padding: 18px 20px;
+    }
+
+    .panel h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    .bullets {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .bullets li {
+      display: grid;
+      grid-template-columns: 12px 1fr;
+      gap: 10px;
+      color: #303b51;
+      font-size: 16px;
+      line-height: 1.36;
+    }
+
+    .bullets li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .metric {
+      border-radius: 16px;
+      padding: 18px 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      min-height: 112px;
+    }
+
+    .metric .value {
+      font-size: 31px;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .metric .label {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.25;
+    }
+
+    .footer {
+      position: absolute;
+      left: 54px;
+      right: 54px;
+      bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      color: #8791a6;
+      font-size: 13px;
+    }
+
+    @media print {
+      body { background: white; }
+      .deck { padding: 0; gap: 0; }
+      .slide { box-shadow: none; border: none; page-break-after: always; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="slide">
+      <div class="topbar">
+        <div>
+          <div class="tag">Task 3 Methodology</div>
+          <h1>VLN Policy Architecture</h1>
+          <div class="subtitle">A multimodal imitation-learning policy that grounds instructions in visual observations and predicts discrete navigation actions during rollout.</div>
+        </div>
+        <div class="pill">RGB + Language + Memory → Action</div>
+      </div>
+
+      <div class="architecture">
+        <div class="lane">
+          <div class="lane-title"><span class="dot" style="background: var(--blue)"></span> Visual Stream</div>
+          <div class="blocks">
+            <div class="block">
+              <span class="mini-label" style="background: var(--blue)">Input</span>
+              <h3>RGB Observation</h3>
+              <p>Egocentric camera frame from Habitat at timestep <em>t</em>.</p>
+              <span class="arrow">→</span>
+            </div>
+            <div class="block">
+              <span class="mini-label" style="background: var(--blue)">Encoder</span>
+              <h3>ResNet-18</h3>
+              <p>Extracts compact visual features from indoor scene geometry, objects, and layout.</p>
+              <span class="arrow">→</span>
+            </div>
+            <div class="block">
+              <span class="mini-label" style="background: var(--blue)">Projection</span>
+              <h3>Visual Feature</h3>
+              <p>Projected to a 256-D representation used as the attention query.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lane">
+          <div class="lane-title"><span class="dot" style="background: var(--purple)"></span> Language Stream</div>
+          <div class="blocks">
+            <div class="block">
+              <span class="mini-label" style="background: var(--purple)">Input</span>
+              <h3>Instruction</h3>
+              <p>Natural language route command from R2R/VLN-CE.</p>
+              <span class="arrow">→</span>
+            </div>
+            <div class="block">
+              <span class="mini-label" style="background: var(--purple)">Encoder</span>
+              <h3>DistilBERT</h3>
+              <p>Produces contextual token features for directions, landmarks, and stop phrases.</p>
+              <span class="arrow">→</span>
+            </div>
+            <div class="block">
+              <span class="mini-label" style="background: var(--purple)">Tokens</span>
+              <h3>Text Features</h3>
+              <p>Token-level instruction memory used as keys and values in attention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fusion-row">
+        <div class="block">
+          <span class="mini-label" style="background: var(--green)">Fusion</span>
+          <h3>CMA</h3>
+          <p>Cross-modal attention lets the current visual state attend to relevant instruction tokens.</p>
+          <span class="arrow">→</span>
+        </div>
+        <div class="block">
+          <span class="mini-label" style="background: var(--green)">Gate</span>
+          <h3>Visual-Language Context</h3>
+          <p>A learned gate balances visual evidence with attended language context.</p>
+          <span class="arrow">→</span>
+        </div>
+        <div class="block">
+          <span class="mini-label" style="background: var(--orange)">Memory</span>
+          <h3>GRU Controller</h3>
+          <p>Maintains temporal navigation state using fused features and previous action embedding.</p>
+          <span class="arrow">→</span>
+        </div>
+        <div class="block">
+          <span class="mini-label" style="background: var(--red)">Training</span>
+          <h3>Action Head + CE</h3>
+          <p>Predicts stop, forward, left, right. Trained with cross-entropy over oracle actions.</p>
+        </div>
+      </div>
+
+      <div class="formula">
+        <div class="formula-card"><strong>Attention</strong>visual query attends over DistilBERT token keys/values</div>
+        <div class="formula-card"><strong>Policy Memory</strong>GRU keeps history so decisions depend on previous turns and movement</div>
+        <div class="formula-card"><strong>Rollout Evaluation</strong>learned actions only; no oracle control during reported evaluation</div>
+      </div>
+
+      <div class="footer">
+        <span>VLN-CE / Habitat</span>
+        <span>Task 3: Architecture + Training Method</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="topbar">
+        <div>
+          <div class="tag">Task 4 Methodology</div>
+          <h1>Generalization and Ablation Study</h1>
+          <div class="subtitle">We tested whether the learned CMA policy still works when the environment, instruction wording, training data size, or fusion mechanism changes.</div>
+        </div>
+        <div class="pill">Evaluate → Stress Test → Compare → Interpret</div>
+      </div>
+
+      <div class="task4-grid">
+        <div class="study">
+          <div class="icon" style="background: var(--blue)">1</div>
+          <h3>Held-Out Layouts</h3>
+          <p>Evaluated outside the training route subset to check whether the policy transfers beyond familiar navigation patterns.</p>
+        </div>
+        <div class="study">
+          <div class="icon" style="background: var(--purple)">2</div>
+          <h3>Paraphrases</h3>
+          <p>Generated rule-based instruction rewrites such as walk → move and hallway → corridor to test language robustness.</p>
+        </div>
+        <div class="study">
+          <div class="icon" style="background: var(--orange)">3</div>
+          <h3>Reduced Data</h3>
+          <p>Compared smaller and larger trajectory subsets to measure how route diversity affects rollout behavior.</p>
+        </div>
+        <div class="study">
+          <div class="icon" style="background: var(--green)">4</div>
+          <h3>Fusion Ablation</h3>
+          <p>Compared CMA cross-attention against simpler gated visual-language fusion under a matched small-data setting.</p>
+        </div>
+      </div>
+
+      <div class="insights">
+        <div class="panel">
+          <h3>What the results mean</h3>
+          <ul class="bullets">
+            <li>CMA reduced final distance much more effectively than gated fusion, suggesting token-level grounding is important.</li>
+            <li>More training trajectories improved validation rollout performance, showing that route diversity matters.</li>
+            <li>Paraphrasing exposed language sensitivity: the model understands useful patterns but remains wording-dependent.</li>
+            <li>Held-out layouts were harder, mainly because of over-turning and weak stopping calibration in unfamiliar scenes.</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Key takeaways</h3>
+          <div class="metrics">
+            <div class="metric">
+              <div class="value" style="color: var(--green)">25%</div>
+              <div class="label">Best clean validation SR after stop-aware training</div>
+            </div>
+            <div class="metric">
+              <div class="value" style="color: var(--blue)">5.92m</div>
+              <div class="label">CMA ablation final distance versus 12.11m for gated fusion</div>
+            </div>
+            <div class="metric">
+              <div class="value" style="color: var(--orange)">37.5%</div>
+              <div class="label">Best controlled validation SR/SPL observed in the project</div>
+            </div>
+            <div class="metric">
+              <div class="value" style="color: var(--red)">↓</div>
+              <div class="label">Paraphrase performance dropped, motivating language augmentation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>Task 4: Generalization + Ablations</span>
+        <span>Interpretation-focused evaluation</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

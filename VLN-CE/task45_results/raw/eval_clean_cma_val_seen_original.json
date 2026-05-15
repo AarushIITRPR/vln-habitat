@@ -1,0 +1,164 @@
+{
+  "checkpoint": "data/checkpoints/current_cma_da_stopfix_mild/best_mild_stop.ckpt",
+  "split": "val_seen",
+  "instruction_mode": "original",
+  "episodes": 16,
+  "max_steps": 120,
+  "summary": {
+    "distance_to_goal": 8.638881124556065,
+    "spl": 0.1875,
+    "success": 0.1875,
+    "action_distribution": {
+      "move_forward": 0.6974921630094044,
+      "stop": 0.0219435736677116,
+      "turn_left": 0.2225705329153605,
+      "turn_right": 0.05799373040752351
+    }
+  },
+  "per_episode": [
+    {
+      "episode_id": "457",
+      "steps": 17,
+      "instruction": "walk past staircase, turn left at dining table and stop in front of desk. ",
+      "evaluated_instruction": "walk past staircase, turn left at dining table and stop in front of desk. ",
+      "distance_to_goal": 10.452527046203613,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "731",
+      "steps": 30,
+      "instruction": "Turn around and go to your right passed the living area and the stairs. Walk to the left of the table and turn left. Stop in the room with the book on the table. ",
+      "evaluated_instruction": "Turn around and go to your right passed the living area and the stairs. Walk to the left of the table and turn left. Stop in the room with the book on the table. ",
+      "distance_to_goal": 10.275325775146484,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "135",
+      "steps": 120,
+      "instruction": "Go down the hallway passed the stairs and living area with the wood table. Exit out into the backyard through the doorway. ",
+      "evaluated_instruction": "Go down the hallway passed the stairs and living area with the wood table. Exit out into the backyard through the doorway. ",
+      "distance_to_goal": 1.0001548528671265,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "58",
+      "steps": 34,
+      "instruction": "Walk into bedroom. Walk past bedroom door. Wait at laundry room door. ",
+      "evaluated_instruction": "Walk into bedroom. Walk past bedroom door. Wait at laundry room door. ",
+      "distance_to_goal": 10.954160690307617,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "732",
+      "steps": 30,
+      "instruction": "Walk toward the staircase and to the left of the stairs. Turn left by the table and chairs and stop in front of the desk. ",
+      "evaluated_instruction": "Walk toward the staircase and to the left of the stairs. Turn left by the table and chairs and stop in front of the desk. ",
+      "distance_to_goal": 10.275325775146484,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "136",
+      "steps": 44,
+      "instruction": "Go all the way to the glass double doors and stop in the doorway. ",
+      "evaluated_instruction": "Go all the way to the glass double doors and stop in the doorway. ",
+      "distance_to_goal": 1.838047742843628,
+      "success": 1.0,
+      "spl": 1.0
+    },
+    {
+      "episode_id": "134",
+      "steps": 44,
+      "instruction": "Leave the living room area and walk straight back past the stairs and to the back door. Stand in the doorway and look outside. ",
+      "evaluated_instruction": "Leave the living room area and walk straight back past the stairs and to the back door. Stand in the doorway and look outside. ",
+      "distance_to_goal": 1.838047742843628,
+      "success": 1.0,
+      "spl": 1.0
+    },
+    {
+      "episode_id": "59",
+      "steps": 34,
+      "instruction": "Walk through the door by the sink into the middle of the next room. Turn right and walk down the hallway and enter the third door on your right. ",
+      "evaluated_instruction": "Walk through the door by the sink into the middle of the next room. Turn right and walk down the hallway and enter the third door on your right. ",
+      "distance_to_goal": 10.954160690307617,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "733",
+      "steps": 30,
+      "instruction": "Enter the building and walk past the stairs. Turn hard left at the glass table and go into the room. Stop in front of the wooden table. ",
+      "evaluated_instruction": "Enter the building and walk past the stairs. Turn hard left at the glass table and go into the room. Stop in front of the wooden table. ",
+      "distance_to_goal": 10.275325775146484,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "455",
+      "steps": 43,
+      "instruction": "Turn around and walk straight. Turn into the room on the left with the black desk and big window. Stop by the rug. ",
+      "evaluated_instruction": "Turn around and walk straight. Turn into the room on the left with the black desk and big window. Stop by the rug. ",
+      "distance_to_goal": 11.496957778930664,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "456",
+      "steps": 17,
+      "instruction": "Turn around and walk to the end of the long table with chairs. At the end turn left and enter the sitting room and stop. ",
+      "evaluated_instruction": "Turn around and walk to the end of the long table with chairs. At the end turn left and enter the sitting room and stop. ",
+      "distance_to_goal": 10.452527046203613,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "60",
+      "steps": 11,
+      "instruction": "Exit the bathroom, turn right, then head straight down the hallway. Stop and wait at the second door on the right. ",
+      "evaluated_instruction": "Exit the bathroom, turn right, then head straight down the hallway. Stop and wait at the second door on the right. ",
+      "distance_to_goal": 13.191134452819824,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "61",
+      "steps": 56,
+      "instruction": "With the couch on your right go forward past the table and loves eta and take a right to go around the piano and take a left into the hallway on the left of the stairs if you are facing the stairs and stop in the doorway just inside the hall. ",
+      "evaluated_instruction": "With the couch on your right go forward past the table and loves eta and take a right to go around the piano and take a left into the hallway on the left of the stairs if you are facing the stairs and stop in the doorway just inside the hall. ",
+      "distance_to_goal": 2.761894941329956,
+      "success": 1.0,
+      "spl": 1.0
+    },
+    {
+      "episode_id": "446",
+      "steps": 4,
+      "instruction": "Exit the room using the door on the right. Turn left and go through the kitchen. Go past the table and chairs and wait near the stairs on the right. ",
+      "evaluated_instruction": "Exit the room using the door on the right. Turn left and go through the kitchen. Go past the table and chairs and wait near the stairs on the right. ",
+      "distance_to_goal": 11.208357810974121,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "447",
+      "steps": 4,
+      "instruction": "Keep walking forward and turn right to exit. Enter the kitchen, and keep walking forward passing the small corner table with four chairs on the right. Enter the corner where the staircase is visible, and stop in front of the stairs. ",
+      "evaluated_instruction": "Keep walking forward and turn right to exit. Enter the kitchen, and keep walking forward passing the small corner table with four chairs on the right. Enter the corner where the staircase is visible, and stop in front of the stairs. ",
+      "distance_to_goal": 11.208357810974121,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "63",
+      "steps": 120,
+      "instruction": "Walk toward the piano. Turn right at the piano, then turn left before the stairs and wait in the doorway. ",
+      "evaluated_instruction": "Walk toward the piano. Turn right at the piano, then turn left before the stairs and wait in the doorway. ",
+      "distance_to_goal": 10.03979206085205,
+      "success": 0.0,
+      "spl": 0.0
+    }
+  ]
+}

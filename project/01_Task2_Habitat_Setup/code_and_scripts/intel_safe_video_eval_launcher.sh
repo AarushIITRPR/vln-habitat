@@ -1,0 +1,1 @@
+../../../VLN-CE/scripts/launch_cma_da_intel_video_eval.sh

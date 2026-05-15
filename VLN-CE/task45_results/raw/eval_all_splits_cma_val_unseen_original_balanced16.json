@@ -1,0 +1,180 @@
+{
+  "checkpoint": "data/checkpoints/current_cma_da_all_splits_mild/best_all_splits_mild.ckpt",
+  "split": "val_unseen",
+  "instruction_mode": "original",
+  "episodes": 16,
+  "max_steps": 120,
+  "summary": {
+    "distance_to_goal": 9.985939309000969,
+    "spl": 0.0,
+    "success": 0.0,
+    "action_distribution": {
+      "move_forward": 0.48747913188647746,
+      "stop": 0.007512520868113523,
+      "turn_left": 0.24791318864774625,
+      "turn_right": 0.2570951585976628
+    }
+  },
+  "per_episode": [
+    {
+      "episode_id": "1",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "steps": 18,
+      "instruction": "Exit the bedroom and turn left. Walk straight passing the gray couch and stop near the rug. ",
+      "evaluated_instruction": "Exit the bedroom and turn left. Walk straight passing the gray couch and stop near the rug. ",
+      "distance_to_goal": 8.263774871826172,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "4",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "steps": 120,
+      "instruction": "Walk up the flight of stairs to the top. Turn and follow the railing into the bedroom area. Walk towards the closet. ",
+      "evaluated_instruction": "Walk up the flight of stairs to the top. Turn and follow the railing into the bedroom area. Walk towards the closet. ",
+      "distance_to_goal": 9.660629272460938,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "7",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "steps": 120,
+      "instruction": "Go straight past the pool. Walk between the bar and chairs.  Stop when you get to the corner of the bar.  That's where you will wait. ",
+      "evaluated_instruction": "Go straight past the pool. Walk between the bar and chairs.  Stop when you get to the corner of the bar.  That's where you will wait. ",
+      "distance_to_goal": 9.880430221557617,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "10",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "steps": 120,
+      "instruction": "Walk into the living room and keep walking straight past the living room. Then walk into the entrance under the balcony. Wait in the entrance to the other room. ",
+      "evaluated_instruction": "Walk into the living room and keep walking straight past the living room. Then walk into the entrance under the balcony. Wait in the entrance to the other room. ",
+      "distance_to_goal": 3.3630146980285645,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "19",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "steps": 94,
+      "instruction": "Walk through the living room around the backside of the couches. Walk into the kitchen area and walk along the barstools and countertop. Continue ahead towards the arched entryway that leads to a hall beside the stairs. ",
+      "evaluated_instruction": "Walk through the living room around the backside of the couches. Walk into the kitchen area and walk along the barstools and countertop. Continue ahead towards the arched entryway that leads to a hall beside the stairs. ",
+      "distance_to_goal": 17.051305770874023,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "28",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "steps": 54,
+      "instruction": "Exit the room through the door on the right. Walk past the stairs and the bathroom and enter the room with the cardboard boxes. Stop by the doorway on the left that leads to the living room. ",
+      "evaluated_instruction": "Exit the room through the door on the right. Walk past the stairs and the bathroom and enter the room with the cardboard boxes. Stop by the doorway on the left that leads to the living room. ",
+      "distance_to_goal": 12.247639656066895,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "46",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "steps": 26,
+      "instruction": "Finish climbing the stairs and walk straight through the doorway in front of you.  You'll be a bedroom at that point.  Turn right and walk across the room next to the bed to the doorway on your right.  Turn right and walk though the closet into the bathroom.  Stop in front of the toilet in the bathroom. ",
+      "evaluated_instruction": "Finish climbing the stairs and walk straight through the doorway in front of you.  You'll be a bedroom at that point.  Turn right and walk across the room next to the bed to the doorway on your right.  Turn right and walk though the closet into the bathroom.  Stop in front of the toilet in the bathroom. ",
+      "distance_to_goal": 8.746545791625977,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "127",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "steps": 31,
+      "instruction": "Turn around 180 degrees.  Go through the open door to the loft.  Once through the doorway, turn to the left and walk towards the far side of the loft.  Stop once you are just past the opening to the stairs. ",
+      "evaluated_instruction": "Turn around 180 degrees.  Go through the open door to the loft.  Once through the doorway, turn to the left and walk towards the far side of the loft.  Stop once you are just past the opening to the stairs. ",
+      "distance_to_goal": 4.305588722229004,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "205",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "steps": 120,
+      "instruction": "Turn towards a large wooden manel, go forward through a doorway and continue down a red carpet between rope barriers until you reach the next doorway, facing a large bed,and stop. ",
+      "evaluated_instruction": "Turn towards a large wooden manel, go forward through a doorway and continue down a red carpet between rope barriers until you reach the next doorway, facing a large bed,and stop. ",
+      "distance_to_goal": 14.649295806884766,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "220",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "steps": 120,
+      "instruction": "Start in the middle of the large room head towards the door that leads to the outside, turn left and head up the stairs, take a hard left, stop when you are inside the workout room. ",
+      "evaluated_instruction": "Start in the middle of the large room head towards the door that leads to the outside, turn left and head up the stairs, take a hard left, stop when you are inside the workout room. ",
+      "distance_to_goal": 14.996236801147461,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "412",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "steps": 33,
+      "instruction": "Walk past altar book stands. Wait under wooden rafter. ",
+      "evaluated_instruction": "Walk past altar book stands. Wait under wooden rafter. ",
+      "distance_to_goal": 6.143304347991943,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "2",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "steps": 18,
+      "instruction": "Walk out of the bedroom through the open door into the hallway. Turn the corner and walk into the dining area. Pass the dining table and walk  into the living room area towards the television. Stop near the chair and open sliding doors to outside. ",
+      "evaluated_instruction": "Walk out of the bedroom through the open door into the hallway. Turn the corner and walk into the dining area. Pass the dining table and walk  into the living room area towards the television. Stop near the chair and open sliding doors to outside. ",
+      "distance_to_goal": 8.263774871826172,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "5",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "steps": 120,
+      "instruction": "Go up the stairs, and then turn around and go through the door past the stairs. Walk up to the bed, then turn to the right and walk into the doorway. Stop there. ",
+      "evaluated_instruction": "Go up the stairs, and then turn around and go through the door past the stairs. Walk up to the bed, then turn to the right and walk into the doorway. Stop there. ",
+      "distance_to_goal": 9.660629272460938,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "8",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "steps": 120,
+      "instruction": "Walk across the room and wait at the far end of the bar. ",
+      "evaluated_instruction": "Walk across the room and wait at the far end of the bar. ",
+      "distance_to_goal": 9.880430221557617,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "11",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "steps": 42,
+      "instruction": "Walk across the floor and wait the archway. ",
+      "evaluated_instruction": "Walk across the floor and wait the archway. ",
+      "distance_to_goal": 3.3673980236053467,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "20",
+      "scene_id": "/home/aarush-gupta/habitat-lab-vln/VLN-CE/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "steps": 42,
+      "instruction": "Walk behind the couch towards the kitchen. Enter the kitchen.  Walk towards the doors that go outside.  Turn left when you reach the doors. Walk down the hallway past the kitchen.  Stop where the four hallways intersect. ",
+      "evaluated_instruction": "Walk behind the couch towards the kitchen. Enter the kitchen.  Walk towards the doors that go outside.  Turn left when you reach the doors. Walk down the hallway past the kitchen.  Stop where the four hallways intersect. ",
+      "distance_to_goal": 19.29503059387207,
+      "success": 0.0,
+      "spl": 0.0
+    }
+  ]
+}

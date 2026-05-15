@@ -1,0 +1,163 @@
+{
+  "checkpoint": "data/checkpoints/current_cma_da_stopfix_mild/best_mild_stop.ckpt",
+  "split": "val_unseen",
+  "instruction_mode": "paraphrase",
+  "episodes": 16,
+  "max_steps": 120,
+  "summary": {
+    "distance_to_goal": 7.702207714319229,
+    "spl": 0.0,
+    "success": 0.0,
+    "action_distribution": {
+      "move_forward": 0.467005076142132,
+      "stop": 0.03553299492385787,
+      "turn_left": 0.49746192893401014
+    }
+  },
+  "per_episode": [
+    {
+      "episode_id": "632",
+      "steps": 1,
+      "instruction": "exit into the pool room and stop before pool. ",
+      "evaluated_instruction": "exit into the pool area and come to a stop before pool.",
+      "distance_to_goal": 5.035246849060059,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "310",
+      "steps": 14,
+      "instruction": "Walk out of the sauna. Walk by the Jacuzzi. Stop on the Jacuzzi control panel. ",
+      "evaluated_instruction": "move out of the sauna. move by the Jacuzzi. come to a stop on the Jacuzzi control panel.",
+      "distance_to_goal": 7.144934177398682,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "229",
+      "steps": 13,
+      "instruction": "Walk through doorway towards the tub, turn left and walk towards the bar, right before the bar turn left, walk up the stairs and walk through the first door on the right, stop right before the table. ",
+      "evaluated_instruction": "move through door opening towards the tub, make a left-hand side turn and move towards the bar, right-hand side before the bar make a left-hand side turn, move up the stairs and move through the first door on the right-hand side, come to a stop right-hand side before the table.",
+      "distance_to_goal": 10.73131275177002,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1056",
+      "steps": 4,
+      "instruction": "walk forward near the pool and make a right turn and stop at the doorway. ",
+      "evaluated_instruction": "move forward near the pool and make a right-hand side turn and come to a stop at the door opening.",
+      "distance_to_goal": 7.442294120788574,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "973",
+      "steps": 14,
+      "instruction": "Exit the massage room and go straight across the hallway through the brown double doors, go down the steps and stop. ",
+      "evaluated_instruction": "Exit the massage area and proceed forward across the corridor through the brown double doors, proceed down the steps and come to a stop.",
+      "distance_to_goal": 6.161933422088623,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1800",
+      "steps": 5,
+      "instruction": "Go up the steps next to the minibar and continue down the hallway, until stopping after entering the last door on the right. ",
+      "evaluated_instruction": "proceed up the steps next to the minibar and keep going down the corridor, up to the point where stopping after entering the last door on the right-hand side.",
+      "distance_to_goal": 10.982259750366211,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "101",
+      "steps": 13,
+      "instruction": "exit room walk through double doors stop on top step of hottub. ",
+      "evaluated_instruction": "exit area move through double doors come to a stop on top step of hottub.",
+      "distance_to_goal": 8.6139554977417,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1799",
+      "steps": 5,
+      "instruction": "Walk up the stairs, then turn right at the second doorway. Wait by the plant. ",
+      "evaluated_instruction": "move up the stairs, after that make a right-hand side turn at the second door opening. Wait by the plant.",
+      "distance_to_goal": 10.982259750366211,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "9",
+      "steps": 120,
+      "instruction": "Go forward one meter\r\nGo to the chairs\r\nGo to the steps\r\nGo to the endtable\r\nGo to the tan door. ",
+      "evaluated_instruction": "proceed forward one meter proceed to the chairs proceed to the steps proceed to the endtable proceed to the tan door.",
+      "distance_to_goal": 8.01767349243164,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "225",
+      "steps": 15,
+      "instruction": "Walk down the stairs and head into the pool room. Stop at the bottom of the stairs once you are in the pool room. ",
+      "evaluated_instruction": "move down the stairs and keep going into the pool area. come to a stop at the bottom of the stairs once you are in the pool area.",
+      "distance_to_goal": 5.289583683013916,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "32",
+      "steps": 15,
+      "instruction": "Go through the single door on the right.Turn left and go through the door on the left.  Stand by the bottom right side of the massage table. ",
+      "evaluated_instruction": "proceed through the single door on the right-hand side.make a left-hand side turn and proceed through the door on the left-hand side. Stand by the bottom right-hand side side of the massage table.",
+      "distance_to_goal": 4.882237434387207,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1663",
+      "steps": 7,
+      "instruction": "Walk up the three stairs to exit the room.  Walk straight ahead up three more steps, and take the second door on the right.  Stop after your pass through that door. ",
+      "evaluated_instruction": "move up the three stairs to exit the area. move forward ahead up three more steps, and take the second door on the right-hand side. come to a stop after your pass through that door.",
+      "distance_to_goal": 6.665602684020996,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1671",
+      "steps": 120,
+      "instruction": "Walk around the bed and exit the room.  Turn right and walk into the room with another bed in it.  Stop at the side of the bed. ",
+      "evaluated_instruction": "move around the bed and exit the area. make a right-hand side turn and move into the area with another bed in it. come to a stop at the side of the bed.",
+      "distance_to_goal": 6.704848766326904,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1291",
+      "steps": 16,
+      "instruction": "Go right and up two set of steps on the right. Turn right and wait near the bed. ",
+      "evaluated_instruction": "proceed right-hand side and up two set of steps on the right-hand side. make a right-hand side turn and wait near the bed.",
+      "distance_to_goal": 8.554238319396973,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "231",
+      "steps": 17,
+      "instruction": "Walk out of the sauna into the pool room and take a left. Walk towards the bar and take a left going up the stairs into the hallway. Go up the next part of the stairs and take at the first right into the massage room. Stop just inside the doorway on the right. ",
+      "evaluated_instruction": "move out of the sauna into the pool area and take a left-hand side. move towards the bar and take a left-hand side going up the stairs into the corridor. proceed up the next part of the stairs and take at the first right-hand side into the massage area. come to a stop just inside the door opening on the right-hand side.",
+      "distance_to_goal": 10.737359046936035,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "224",
+      "steps": 15,
+      "instruction": "Walk through the hallway and descend three steps. Continue through the doorway straight ahead and descend three more steps. Wait at the bottom of the steps next to the bar. ",
+      "evaluated_instruction": "move through the corridor and descend three steps. keep going through the door opening forward ahead and descend three more steps. Wait at the bottom of the steps next to the bar.",
+      "distance_to_goal": 5.289583683013916,
+      "success": 0.0,
+      "spl": 0.0
+    }
+  ]
+}

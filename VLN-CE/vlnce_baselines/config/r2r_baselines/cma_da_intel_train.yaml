@@ -1,0 +1,43 @@
+BASE_TASK_CONFIG_PATH: habitat_extensions/config/vlnce_task.yaml
+SIMULATOR_GPU_IDS: [-1]
+TORCH_GPU_ID: 0
+NUM_ENVIRONMENTS: 1
+SENSORS: [RGB_SENSOR]
+TENSORBOARD_DIR: data/tensorboard_dirs/cma_da_intel_train
+CHECKPOINT_FOLDER: data/checkpoints/cma_da_intel_train
+EVAL_CKPT_PATH_DIR: data/checkpoints/cma_da_intel_train
+RESULTS_DIR: data/checkpoints/cma_da_intel_train/evals
+LOG_FILE: data/logs/cma_da_intel_train.log
+
+EVAL:
+  USE_CKPT_CONFIG: False
+  SPLIT: val_seen
+  EPISODE_COUNT: 2
+
+IL:
+  epochs: 1
+  batch_size: 2
+
+  DAGGER:
+    iterations: 1
+    update_size: 2
+    p: 0.75
+    preload_lmdb_features: False
+    lmdb_features_dir: data/trajectories_dirs/cma_da_intel_train/trajectories.lmdb
+    lmdb_map_size: 1000000000.0
+
+MODEL:
+  policy_name: CMAPolicy
+  ablate_depth: True
+
+  INSTRUCTION_ENCODER:
+    bidirectional: True
+
+TASK_CONFIG:
+  SIMULATOR:
+    HABITAT_SIM_V0:
+      GPU_DEVICE_ID: -1
+  DATASET:
+    SPLIT: train
+    DATA_PATH: data/datasets/R2R_VLNCE_v1-3_preprocessed/{split}/{split}.json.gz
+    SCENES_DIR: data/scene_datasets/

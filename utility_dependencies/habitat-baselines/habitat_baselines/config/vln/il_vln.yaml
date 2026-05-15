@@ -1,0 +1,85 @@
+# @package _global_
+
+defaults:
+  - /habitat_baselines: habitat_baselines_il_config_base
+  - /benchmark/nav: vln_r2r
+  - _self_
+
+habitat:
+  dataset:
+    split: train
+  simulator:
+    concur_render: False
+    habitat_sim_v0:
+      gpu_device_id: -1
+    agents:
+      main_agent:
+        sim_sensors:
+          rgb_sensor:
+            width: 256
+            height: 256
+
+habitat_baselines:
+  trainer_name: "vln"
+  torch_gpu_id: 0
+  eval_ckpt_path_dir: "data/vln/il/checkpoints"
+  checkpoint_folder: "data/vln/il/checkpoints"
+  tensorboard_dir: "data/vln/il/tb"
+  log_interval: 10
+  checkpoint_interval: 1
+  force_torch_single_threaded: True
+  il:
+    results_dir: "data/vln/il/results/{split}"
+    log_metrics: True
+    output_log_dir: "data/vln/il/logs"
+    eval_save_results: True
+    eval_save_results_interval: 10
+    vln:
+      train_split: train
+      val_split: val_seen
+
+      # Keep the default small enough for a first project run. Set these to -1
+      # to use every episode in a split.
+      max_train_episodes: 128
+      max_val_episodes: 32
+      max_rollout_episodes: 16
+      max_trajectory_steps: 200
+      max_rollout_steps: 500
+
+      cache_dir: "data/vln/il/cache"
+      refresh_cache: False
+      follower_goal_radius: 0.5
+      follower_mode: "geodesic_path"
+
+      batch_size: 4
+      max_epochs: 10
+      lr: 3e-5
+      weight_decay: 0.01
+      max_grad_norm: 1.0
+      rollout_eval: True
+
+      max_instruction_length: 80
+      hidden_size: 256
+      recurrent_hidden_size: 512
+      prev_action_embedding_dim: 32
+      dropout: 0.1
+      image_size: 224
+
+      visual_backbone: "resnet18"
+      visual_pretrained: True
+      freeze_visual_encoder: True
+
+      text_model_name: "distilbert-base-uncased"
+      text_pretrained: True
+      freeze_text_encoder: True
+      transformers_local_files_only: False
+
+      # Used only when text_model_name is set to "" for offline smoke tests.
+      simple_text_vocab_size: 30522
+
+      fusion_type: "gated"
+      cma_num_heads: 4
+      use_depth: False
+      separate_stop_head: False
+      stop_threshold: 0.5
+      stop_head_loss_weight: 1.0

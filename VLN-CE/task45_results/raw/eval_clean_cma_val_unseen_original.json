@@ -1,0 +1,164 @@
+{
+  "checkpoint": "data/checkpoints/current_cma_da_stopfix_mild/best_mild_stop.ckpt",
+  "split": "val_unseen",
+  "instruction_mode": "original",
+  "episodes": 16,
+  "max_steps": 120,
+  "summary": {
+    "distance_to_goal": 7.829800188541412,
+    "spl": 0.0,
+    "success": 0.0,
+    "action_distribution": {
+      "move_forward": 0.4467005076142132,
+      "stop": 0.03553299492385787,
+      "turn_left": 0.5076142131979695,
+      "turn_right": 0.01015228426395939
+    }
+  },
+  "per_episode": [
+    {
+      "episode_id": "632",
+      "steps": 1,
+      "instruction": "exit into the pool room and stop before pool. ",
+      "evaluated_instruction": "exit into the pool room and stop before pool. ",
+      "distance_to_goal": 5.035246849060059,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "310",
+      "steps": 13,
+      "instruction": "Walk out of the sauna. Walk by the Jacuzzi. Stop on the Jacuzzi control panel. ",
+      "evaluated_instruction": "Walk out of the sauna. Walk by the Jacuzzi. Stop on the Jacuzzi control panel. ",
+      "distance_to_goal": 7.078998565673828,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "229",
+      "steps": 13,
+      "instruction": "Walk through doorway towards the tub, turn left and walk towards the bar, right before the bar turn left, walk up the stairs and walk through the first door on the right, stop right before the table. ",
+      "evaluated_instruction": "Walk through doorway towards the tub, turn left and walk towards the bar, right before the bar turn left, walk up the stairs and walk through the first door on the right, stop right before the table. ",
+      "distance_to_goal": 10.73131275177002,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1056",
+      "steps": 5,
+      "instruction": "walk forward near the pool and make a right turn and stop at the doorway. ",
+      "evaluated_instruction": "walk forward near the pool and make a right turn and stop at the doorway. ",
+      "distance_to_goal": 7.686952590942383,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "973",
+      "steps": 14,
+      "instruction": "Exit the massage room and go straight across the hallway through the brown double doors, go down the steps and stop. ",
+      "evaluated_instruction": "Exit the massage room and go straight across the hallway through the brown double doors, go down the steps and stop. ",
+      "distance_to_goal": 6.161933422088623,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1800",
+      "steps": 5,
+      "instruction": "Go up the steps next to the minibar and continue down the hallway, until stopping after entering the last door on the right. ",
+      "evaluated_instruction": "Go up the steps next to the minibar and continue down the hallway, until stopping after entering the last door on the right. ",
+      "distance_to_goal": 10.982259750366211,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "101",
+      "steps": 13,
+      "instruction": "exit room walk through double doors stop on top step of hottub. ",
+      "evaluated_instruction": "exit room walk through double doors stop on top step of hottub. ",
+      "distance_to_goal": 8.6139554977417,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1799",
+      "steps": 5,
+      "instruction": "Walk up the stairs, then turn right at the second doorway. Wait by the plant. ",
+      "evaluated_instruction": "Walk up the stairs, then turn right at the second doorway. Wait by the plant. ",
+      "distance_to_goal": 10.982259750366211,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "9",
+      "steps": 120,
+      "instruction": "Go forward one meter\r\nGo to the chairs\r\nGo to the steps\r\nGo to the endtable\r\nGo to the tan door. ",
+      "evaluated_instruction": "Go forward one meter\r\nGo to the chairs\r\nGo to the steps\r\nGo to the endtable\r\nGo to the tan door. ",
+      "distance_to_goal": 9.880430221557617,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "225",
+      "steps": 15,
+      "instruction": "Walk down the stairs and head into the pool room. Stop at the bottom of the stairs once you are in the pool room. ",
+      "evaluated_instruction": "Walk down the stairs and head into the pool room. Stop at the bottom of the stairs once you are in the pool room. ",
+      "distance_to_goal": 5.289583683013916,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "32",
+      "steps": 15,
+      "instruction": "Go through the single door on the right.Turn left and go through the door on the left.  Stand by the bottom right side of the massage table. ",
+      "evaluated_instruction": "Go through the single door on the right.Turn left and go through the door on the left.  Stand by the bottom right side of the massage table. ",
+      "distance_to_goal": 4.882237434387207,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1663",
+      "steps": 7,
+      "instruction": "Walk up the three stairs to exit the room.  Walk straight ahead up three more steps, and take the second door on the right.  Stop after your pass through that door. ",
+      "evaluated_instruction": "Walk up the three stairs to exit the room.  Walk straight ahead up three more steps, and take the second door on the right.  Stop after your pass through that door. ",
+      "distance_to_goal": 6.665602684020996,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1671",
+      "steps": 120,
+      "instruction": "Walk around the bed and exit the room.  Turn right and walk into the room with another bed in it.  Stop at the side of the bed. ",
+      "evaluated_instruction": "Walk around the bed and exit the room.  Turn right and walk into the room with another bed in it.  Stop at the side of the bed. ",
+      "distance_to_goal": 6.704848766326904,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "1291",
+      "steps": 16,
+      "instruction": "Go right and up two set of steps on the right. Turn right and wait near the bed. ",
+      "evaluated_instruction": "Go right and up two set of steps on the right. Turn right and wait near the bed. ",
+      "distance_to_goal": 8.554238319396973,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "231",
+      "steps": 17,
+      "instruction": "Walk out of the sauna into the pool room and take a left. Walk towards the bar and take a left going up the stairs into the hallway. Go up the next part of the stairs and take at the first right into the massage room. Stop just inside the doorway on the right. ",
+      "evaluated_instruction": "Walk out of the sauna into the pool room and take a left. Walk towards the bar and take a left going up the stairs into the hallway. Go up the next part of the stairs and take at the first right into the massage room. Stop just inside the doorway on the right. ",
+      "distance_to_goal": 10.737359046936035,
+      "success": 0.0,
+      "spl": 0.0
+    },
+    {
+      "episode_id": "224",
+      "steps": 15,
+      "instruction": "Walk through the hallway and descend three steps. Continue through the doorway straight ahead and descend three more steps. Wait at the bottom of the steps next to the bar. ",
+      "evaluated_instruction": "Walk through the hallway and descend three steps. Continue through the doorway straight ahead and descend three more steps. Wait at the bottom of the steps next to the bar. ",
+      "distance_to_goal": 5.289583683013916,
+      "success": 0.0,
+      "spl": 0.0
+    }
+  ]
+}
