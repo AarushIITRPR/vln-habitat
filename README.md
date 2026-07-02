@@ -152,10 +152,10 @@ Trained the Cross-Modal Attention navigation policy using supervised imitation l
 
 ### Task 4: Generalization & Ablation Studies
 Evaluated the trained policy across multiple axes:
-- **Unseen environments** — performance gap between seen and unseen splits
-- **Paraphrased instructions** — robustness to linguistic variation
-- **Reduced training data** — data efficiency analysis
-- **Ablation study** — component-level contribution analysis
+- **Unseen environments** : performance gap between seen and unseen splits
+- **Paraphrased instructions** : robustness to linguistic variation
+- **Reduced training data** : data efficiency analysis
+- **Ablation study** : component-level contribution analysis
 
 ### Task 5: Controlled Extension — Stop-Aware Policy
 Implemented a stop-aware improvement to reduce premature stopping and missed goals. The extension is a targeted change to stopping behavior while keeping the rest of the policy identical for controlled comparison. Results include SR, SPL, and stopping behavior analysis versus the baseline.
